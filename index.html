@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+CSI 2520 - Fall 2016
+Final Group Project
+Group members:
+    Stephanie Gorham
+    Kelly Kurkowski
+    Keenan McCloskey
+    Dan Wilmot
+-->
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>OU Tutoring Database</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
+        <style>
+            body { 
+                background: url(img/campus.jpg) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color: black;
+            }
+            
+            a:hover {
+                color: gold;
+            }
+            
+            table {
+                opacity: .8;
+                padding: 15px;
+                background: none;
+                color: black;
+                text-align: center;
+            }
+            
+            .form-horizontal {
+                padding: 15px;
+                background-color: white;
+                display: inline-block;
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="">OU Tutoring Database</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#SiteNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="SiteNavBar">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <h1>Login</h1>
+            <img src ="img/grizz.png" alt="Grizz" height="65">
+            <br>
+            <br>
+            <div class="form-group">
+                <form class="form-horizontal" id="login" action="checklogin.php" method="post">
+                    <table class="login">
+                        <tr>
+                            <td><label for="username">Username:</label></td>
+                            <td><input class="form-control" type="text" name="username" size="30" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="passwd">Password:</label></td>
+                            <td><input class="form-control" type="password" name="passwd" size="30" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input class="btn btn-default" type="Reset"> <input class="btn btn-default" type="Submit" value="Sign In"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

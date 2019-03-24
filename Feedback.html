@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+CSI 2520 - Fall 2016
+Final Group Project
+Group members:
+    Stephanie Gorham
+    Kelly Kurkowski
+    Keenan McCloskey
+    Dan Wilmot
+-->
+<html>
+    <head>
+         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Feedback</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="http://bootswatch.com/slate/bootstrap.min.css">
+    </head>
+    <body>
+        
+         <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="main.php">OU Tutoring Database</a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#SiteNavBar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="SiteNavBar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="addstudent.php">Request Help</a></li>
+                        <li><a href="addtutor.php">Offer Help</a></li>
+                        
+
+                        
+                        <li class="dropdown">
+                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Subjects
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                            <li><a href="major_com.php">Communications</a></li>
+                            <li><a href="major_cs.php">Computer Science</a></li>
+                            <li><a href="major_it.php">Information Technology</a></li>
+                            <li><a href="major_egr.php">Engineering</a></li>   
+                        
+                            
+                            
+                            
+                        </ul>
+                        </li>
+                         <li><a href="Feedback.html">Contact us</a></li>
+                        
+                        
+                        
+                        
+                        <!--<li><a href="major_com.php">Communications</a></li>
+                        <li><a href="major_cs.php">Computer Science</a></li>
+                        <li><a href="major_it.php">Information Technology</a></li>
+                        <li><a href="major_eng.php">Engineering</a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        
+        <h1>Contact us</h1>
+         <form method="post" id="myForm" action="#" onSubmit="alert('Thank you for your feedback.');" >
+            <fieldset>
+              
+                <table>
+                    
+                    <tr>
+                        <td>Date:</td>
+                        <td>
+                    <input type="date" name ="picked date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Subject:</td>
+                        <td>
+                    <input type ="radio" value="Website issue">Website issue
+                    <input type ="radio" value="Suggestion">Suggestion
+                    <input type ="radio" value="Personal">Personal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>First Name:</td>
+                        <td>
+                    <input type="text" size="12" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Last Name:</td>
+                        <td>
+                    <input type="text" size="12" >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email address:</td>
+                        <td>
+                    <input type="email" size="12" >
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Message:</td>
+                        <td>
+                            <textarea name="my text" cols ="30" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>I would like a reply</td>
+                        <td>
+                            <input type="radio" value="Reply">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Send Feedback">
+                        </td>
+                        <td><input type="reset" value="Reset Form"></td>
+                    </tr>
+                       
+                                      
+                        
+                </table>
+                
+            </fieldset>
+           
+        </form>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        
+    </body>
+</html>
